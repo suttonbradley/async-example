@@ -6,5 +6,6 @@ where
     Fut: std::future::Future<Output = Result<(), CmdError>>,
     F: FnMut(&mut Client) -> Fut,
 {
+    // Initialize webdriver client, start webdriver process, execute to_exec, and handle cleanup
     Ok(())
 }
